@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact</title>
+  </head>
+  <body>
+    <p>
+      Please don't hesitate to contact me through the options presented bellow:
+    </p>
+    <p>51 Boulevard Napoléon, Paris</p>
+    <a href="tel:+33.6.12.34.56.78">+33 6 12 34 56 78</a><br/>
+    <a href="mailto:myemail@email.com">myemail@email.com</a>
+
+    <p>
+      Alternatively, you can contact me by filling the following contact form
+    </p>
+
+    <form action="mailto:myemail@email.com" method="POST" enctype="text/plain">
+      <label>Name</label>
+      <input type="text" name="userName"/><br/>
+      <label>Phone</label>
+      <input type="tel" name="userPhone"/><br/>
+      <label>E-mail</label>
+      <input type="email" name="userEmail"/><br/>
+      <label>Your message:</label>
+      <textarea name="userMessage" id="" cols="30" rows="10"></textarea><br/>
+      <input type="submit"/>
+
+      <!-- IMPORTANT: do NOT forget to use the 'name' attribute in the input and label tags, so you can identify the received data from the form
+        EX.:
+        userName=Carlos AmÃ©rico Barreto Baptista
+        userPhone=07 00 00 00 00
+        userEmail=email@email.com
+        userMessage=Hey, bro... Whassup? Are you ok?? 
+        -->
+    </form>
+  </body>
+</html>
